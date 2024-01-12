@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css">
-  <title>Survey Form</title>
+  <title>Discworld Survey</title>
 </head>
-
 <body>
   <header>
     <h1 id="title">Nanny Ogg's Book Club Listener Survey</h1>
@@ -15,11 +13,28 @@
   <p id="description">We want to know what you love about Discworld!</p>
   <form method="post" id="survey-form">
     <fieldset>
-      <label for="name">Your Name: <input id="name" type="text" required></label>
-      <label for "email">Your email: <input id="email" type="email" required></label>
+      <label for="name-label">Your Name: <input id="name" type="text" required placeholder="name here"></label>
+      <label for="email-label">Your email: <input id="email" type="email" required placeholder="email here"></label>
     </fieldset>
-    <fieldset><!--Discworld fan info--></fieldset>
+    <fieldset>
+      <label for="books-read">How many Discworld books have you read? <input id="number" type="number" name="books-read" min="0" max="41"></label>
+      <label for="best-branch">What Discworld branch is your favorite?
+        <select id="best-branch" name="best-branch">
+          <option value=" ">(select one)</option>
+          <option value="1">Unseen University/Rincewind</option>
+          <option value="2">Granny Weatherwax</option>
+          <option value="3">Tiffany Aching</option>
+          <option value="4">Death</option>
+          <option value="5">The Watch</option>
+          <option value="6">Moist Von Lipwig</option>
+          <option value="7">Industrial Revolutions</option>
+          <option value="1">Ancient Civilizations</option>
+        </select>
+      </label>
+      <!--Discworld fan info-->
+    </fieldset>
     <fieldset><!--podcast feedback info--></fieldset>
+    <input type="submit" value="Submit">
 </body>
 
 </html>
