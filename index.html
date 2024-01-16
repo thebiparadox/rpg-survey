@@ -18,7 +18,7 @@
     </fieldset>
     <fieldset>
       <legend>What do you love about Discworld?</legend>
-      <label for="books-read" id="number-label">How many Discworld books have you read? <input id="number" type="number" name="books-read" min="0" max="41" placeholder="0-41"></label>
+      <label for="books-read" id="number-label">How many Discworld books have you read?<input id="number" type="number" name="books-read" min="0" max="41" placeholder="0-41"></label>
       <label for="best-branch">What Discworld branch is your favorite?
         <select id="dropdown" name="best-branch">
           <option value=" ">(select one)</option>
@@ -28,19 +28,27 @@
           <option value="4">Death</option>
           <option value="5">The Watch</option>
           <option value="6">Moist Von Lipwig</option>
-          <option value="7">Other (see below)</option>
         </select>
       </label>
-      <label for="other">If you selected Other, please write your favorite branch or novel below:
-      <textarea id="other" name="other" rows="3" cols="30" placeholder="My favorite is the one off novel Small Gods!"></textarea>
-      </label>
+      </fieldset>
+      <fieldset>
+        <legend for="best-novel">What is your favorite stand-alone novel?</legend>
+        <label for="small-gods"><input id="small-gods" type="checkbox" name="best-novel" checked>Small Gods</label>
+        <label for="pyramids"><input id="pyramids" type="checkbox" name="best-novel">Pyramids</label>
+        <label for="moving-pictures"><input id="moving-pictures" type="checkbox" name="best-novel">Moving Pictures</label>
+        <label for="the-truth"><input id="the-truth" type="checkbox" name="best-novel">The Truth</label>
+        <label for="the-last-hero"><input id="the-last-hero" type="checkbox" name="best-novel">The Last Hero</label>
+        <label for="maurice-and-his-educated-rodents"><input id="maurice-and-his-educated-rodents" type="checkbox" name="best-novel">The Amazing Maurice and His Educated Rodents</label>
+        <label for="monstrous-regiment"><input id="monstrous-regiment" type="checkbox" name="best-novel">Monstrous Regiment</label>
       </fieldset>
     <fieldset>
       <legend>Would you recommend Nanny Ogg's Book Club to a friend?</legend>
-      <label for="yes"><input id="yes" type="radio" name="recommendation" checked>Yes</label>
-      <label for="maybe"><input id="maybe" type="radio" name="recommendation">Maybe</label>
-      <label for="no"><input id="no" type="radio" name="recommendation">No</label>
+      <label for="yes"><input id="yes" type="radio" name="recommendation" value="1" checked>Yes</label>
+      <label for="maybe"><input id="maybe" type="radio" name="recommendation" value="2">Maybe</label>
+      <label for="no"><input id="no" type="radio" name="recommendation" value="3">No</label>
     </fieldset>
+    <label for="guest">Who would you love to hear as a guest on our podcast?
+      <textarea id="guest" name="guest-request" rows="3" cols="30" placeholder="Neil Gaiman!"></textarea>
     <input type="submit" value="Submit">
 </body>
 
