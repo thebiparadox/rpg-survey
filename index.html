@@ -17,6 +17,7 @@
       <label for="email" id="email-label">Your email: <input id="email" type="email" required placeholder="rincewind@unseenuniversity.edu"></label>
     </fieldset>
     <fieldset>
+      <legend>What do you love about Discworld?</legend>
       <label for="books-read" id="number-label">How many Discworld books have you read? <input id="number" type="number" name="books-read" min="0" max="41" placeholder="0-41"></label>
       <label for="best-branch">What Discworld branch is your favorite?
         <select id="dropdown" name="best-branch">
@@ -33,9 +34,13 @@
       <label for="other">If you selected Other, please write your favorite branch or novel below:
       <textarea id="other" name="other" rows="3" cols="30" placeholder="My favorite is the one off novel Small Gods!"></textarea>
       </label>
-      <!--fan info here-->
+      </fieldset>
+    <fieldset>
+      <legend>Would you recommend Nanny Ogg's Book Club to a friend?</legend>
+      <label for="yes"><input id="yes" type="radio" name="recommendation" checked>Yes</label>
+      <label for="maybe"><input id="maybe" type="radio" name="recommendation">Maybe</label>
+      <label for="no"><input id="no" type="radio" name="recommendation">No</label>
     </fieldset>
-    <fieldset><!--podcast feedback info--></fieldset>
     <input type="submit" value="Submit">
 </body>
 
