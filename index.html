@@ -33,13 +33,13 @@
       </fieldset>
       <fieldset>
         <legend for="best-novel">What is your favorite stand-alone novel?</legend>
-        <label for="small-gods"><input id="small-gods" type="checkbox" name="best-novel" checked>Small Gods</label>
-        <label for="pyramids"><input id="pyramids" type="checkbox" name="best-novel">Pyramids</label>
-        <label for="moving-pictures"><input id="moving-pictures" type="checkbox" name="best-novel">Moving Pictures</label>
-        <label for="the-truth"><input id="the-truth" type="checkbox" name="best-novel">The Truth</label>
-        <label for="the-last-hero"><input id="the-last-hero" type="checkbox" name="best-novel">The Last Hero</label>
-        <label for="maurice-and-his-educated-rodents"><input id="maurice-and-his-educated-rodents" type="checkbox" name="best-novel">The Amazing Maurice and His Educated Rodents</label>
-        <label for="monstrous-regiment"><input id="monstrous-regiment" type="checkbox" name="best-novel">Monstrous Regiment</label>
+        <label for="small-gods"><input id="small-gods" type="checkbox" name="best-novel" checked value="novel-1">Small Gods</label>
+        <label for="pyramids"><input id="pyramids" type="checkbox" name="best-novel" value="novel-2">Pyramids</label>
+        <label for="moving-pictures"><input id="moving-pictures" type="checkbox" name="best-novel" value="novel-3">Moving Pictures</label>
+        <label for="the-truth"><input id="the-truth" type="checkbox" name="best-novel" value="novel-4">The Truth</label>
+        <label for="the-last-hero"><input id="the-last-hero" type="checkbox" name="best-novel" value="novel-5">The Last Hero</label>
+        <label for="maurice-and-his-educated-rodents"><input id="maurice-and-his-educated-rodents" type="checkbox" name="best-novel" value="novel-6">The Amazing Maurice and His Educated Rodents</label>
+        <label for="monstrous-regiment"><input id="monstrous-regiment" type="checkbox" name="best-novel" value="novel-7">Monstrous Regiment</label>
       </fieldset>
     <fieldset>
       <legend>Would you recommend Nanny Ogg's Book Club to a friend?</legend>
@@ -47,9 +47,12 @@
       <label for="maybe"><input id="maybe" type="radio" name="recommendation" value="2">Maybe</label>
       <label for="no"><input id="no" type="radio" name="recommendation" value="3">No</label>
     </fieldset>
+    <fieldset>
     <label for="guest">Who would you love to hear as a guest on our podcast?
       <textarea id="guest" name="guest-request" rows="3" cols="30" placeholder="Neil Gaiman!"></textarea>
-    <input type="submit" value="Submit">
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+  </form>
 </body>
 
 </html>
