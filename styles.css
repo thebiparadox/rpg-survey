@@ -1,4 +1,8 @@
 body {
-    background-color: #663399;
+    background-image: url(stars.png);
     color: #ffffff;
+}
+
+#console {
+    background-color: #663399;
 }
