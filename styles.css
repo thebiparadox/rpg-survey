@@ -1,8 +1,29 @@
 body {
-    background-image: url(stars.png);
-    color: #ffffff;
+    background-image: url(vecteezy_fantasy-pink-planet-surface_19804657.jpg);
+    color: #ffff;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Garamond;
+    font-size: 16px;
 }
 
-#console {
-    background-color: #663399;
+#form {
+    background-color: #5b36d9;
 }
+
+footer {
+    color: #ffff;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #ffff;
+    border-color: #ffff;
+    min-width: 100px;
+    max-width: 100px;
+  }
