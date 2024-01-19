@@ -1,6 +1,6 @@
 body {
     background-image: url(vecteezy_fantasy-pink-planet-surface_19804657.jpg);
-    color: #000000;
+    color: #ffb437;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -13,7 +13,7 @@ h1, p {
 }
 
 .form {
-    background-color: #5b36d998;
+    background-color: #5b36d9de;
     height: 70vh;
     width: 70vw;
     max-width: 500px;
