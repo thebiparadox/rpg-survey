@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name=“description” content="a survey designed to gather information about fans of RPGs">
   <link rel="stylesheet" href="styles.css">
   <title>RPG Survey</title>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1 id="title">RPG Survey</h1>
+      <h1>RPG Survey</h1>
     </header>
-    <p id="description">We want to know what you love about RPGs!</p>
+    <main>
+    <p class="subtitle">We want to know what you love about RPGs!</p>
     <form method="post" id="survey-form">
       <fieldset>
+        <legend class="subtitle">Your information</legend>
         <label for="name" id="name-label">Your Name: <input id="name" type="text" required placeholder="Geralt of Rivia"></label>
         <label for="email" id="email-label">Your email: <input id="email" type="email" required placeholder="commander-shepard@alliance.mil"></label>
       </fieldset>
       <fieldset>
-        <legend>What's your experience with RPGs?</legend>
+        <legend class="subtitle">What's your experience with RPGs?</legend>
         <label for="number-played" id="number-label">How many RPGs have you played? <input id="number" type="number" name="number-played" min="0" max="100" placeholder="0"></label>
         <label for="best-genre">What is your favorite RPG genre? 
           <select id="dropdown" name="best-genre">
@@ -32,7 +35,7 @@
         </label>
         </fieldset>
         <fieldset>
-          <legend for="characteristics">What do you love about RPGs? Check all that apply</legend>
+          <legend for="characteristics" class="subtitle">What do you love about RPGs? Check all that apply</legend>
           <div class="indent">
           <label for="stories"><input id="stories" type="checkbox" name="characteristics" value="characteristics-1">highly developed stories</label>
           <label for="world-building"><input id="world-building" type="checkbox" name="characteristics" value="characteristics-2">detailed world-building</label>
@@ -45,7 +48,7 @@
           </div>
         </fieldset>
       <fieldset>
-        <legend for="concept">Which do you prefer?</legend>
+        <legend for="concept" class="subtitle">Which do you prefer?</legend>
         <div class="indent">
         <label for="open-world"><input id="open-world" type="radio" name="concept" value="concept-1" checked>open world</label>
         <label for="free-roam"><input id="free-roam" type="radio" name="concept" value="concept-2">free-roam</label>
@@ -59,8 +62,9 @@
         <input id="submit" type="submit" value="Submit">
     </form>
 </div>
+</main>
 </body>
 <footer>
-  <a href="https://www.vecteezy.com/free-vector/fantasy">Fantasy Vectors by Vecteezy</a>
+  <p class="credit">Artwork by <a href="https://www.vecteezy.com/free-vector/fantasy">Fantasy Vectors by Vecteezy</a></p>
 </footer>
 </html>
