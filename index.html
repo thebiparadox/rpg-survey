@@ -7,7 +7,7 @@
   <title>RPG Survey</title>
 </head>
 <body>
-  <div class="form">
+  <div class="container">
     <header>
       <h1 id="title">RPG Survey</h1>
     </header>
@@ -19,8 +19,8 @@
       </fieldset>
       <fieldset>
         <legend>What's your experience with RPGs?</legend>
-        <label for="number-played" id="number-label">How many RPGs have you played?<input id="number" type="number" name="number-played" min="0" max="100" placeholder="0"></label>
-        <label for="best-genre">What is your favorite RPG genre?
+        <label for="number-played" id="number-label">How many RPGs have you played? <input id="number" type="number" name="number-played" min="0" max="100" placeholder="0"></label>
+        <label for="best-genre">What is your favorite RPG genre? 
           <select id="dropdown" name="best-genre">
             <option value=" ">(select one)</option>
             <option value="1">action RPGs</option>
@@ -33,6 +33,7 @@
         </fieldset>
         <fieldset>
           <legend for="characteristics">What do you love about RPGs? Check all that apply</legend>
+          <div class="indent">
           <label for="stories"><input id="stories" type="checkbox" name="characteristics" value="characteristics-1">highly developed stories</label>
           <label for="world-building"><input id="world-building" type="checkbox" name="characteristics" value="characteristics-2">detailed world-building</label>
           <label for="character-interactions"><input id="character-interactions" type="checkbox" name="characteristics" value="characteristics-3">complex and dynamic character interactions</label>
@@ -41,12 +42,15 @@
           <label for="choices"><input id="choices" type="checkbox" name="characteristics" value="characteristics-6">choices and consequences</label>
           <label for="exploration"><input id="exploration" type="checkbox" name="characteristics" value="characteristics-7">exploration and quests</label>
           <label for="romance"><input id="romance" type="checkbox" name="characteristics" value="characteristics-8">romance</label>
+          </div>
         </fieldset>
       <fieldset>
         <legend for="concept">Which do you prefer?</legend>
+        <div class="indent">
         <label for="open-world"><input id="open-world" type="radio" name="concept" value="concept-1" checked>open world</label>
         <label for="free-roam"><input id="free-roam" type="radio" name="concept" value="concept-2">free-roam</label>
         <label for="sandbox"><input id="sandbox" type="radio" name="concept" value="concept-3">sandbox</label>
+      </div>
       </fieldset>
       <fieldset>
       <label for="companion">Who is the best companion in all RPGs?
