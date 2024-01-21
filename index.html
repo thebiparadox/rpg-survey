@@ -21,7 +21,7 @@
         <label for="email" id="email-label">Your email: <input id="email" type="email" required placeholder="commander-shepard@alliance.mil"></label>
       </fieldset>
       <fieldset>
-        <legend class="subtitle">What's your experience with RPGs?</legend>
+        <legend class="subtitle">Experience</legend>
         <label for="number-played" id="number-label">How many RPGs have you played? <input id="number" type="number" name="number-played" min="0" max="100" placeholder="0"></label>
         <label for="best-genre">What is your favorite RPG genre? 
           <select id="dropdown" name="best-genre">
@@ -35,7 +35,8 @@
         </label>
         </fieldset>
         <fieldset>
-          <legend for="characteristics" class="subtitle">What do you love about RPGs? Check all that apply</legend>
+          <legend for="characteristics" class="subtitle">  Preferences</legend>
+          <p>What do you love about RPGs? Check all that apply</p>
           <div class="indent">
           <label for="stories"><input id="stories" type="checkbox" name="characteristics" value="characteristics-1">highly developed stories</label>
           <label for="world-building"><input id="world-building" type="checkbox" name="characteristics" value="characteristics-2">detailed world-building</label>
@@ -46,19 +47,14 @@
           <label for="exploration"><input id="exploration" type="checkbox" name="characteristics" value="characteristics-7">exploration and quests</label>
           <label for="romance"><input id="romance" type="checkbox" name="characteristics" value="characteristics-8">romance</label>
           </div>
-        </fieldset>
-      <fieldset>
-        <legend for="concept" class="subtitle">Which do you prefer?</legend>
+        <p>What world concept do you prefer?</p>
         <div class="indent">
         <label for="open-world"><input id="open-world" type="radio" name="concept" value="concept-1" checked>open world</label>
         <label for="free-roam"><input id="free-roam" type="radio" name="concept" value="concept-2">free-roam</label>
         <label for="sandbox"><input id="sandbox" type="radio" name="concept" value="concept-3">sandbox</label>
       </div>
-      </fieldset>
-      <fieldset>
       <label for="companion">Who is the best companion in all RPGs?
         <textarea id="companion" name="companion" rows="3" cols="30" placeholder="HK-47"></textarea>
-        </fieldset>
         <input id="submit" type="submit" value="Submit">
     </form>
 </div>
