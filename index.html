@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name=“description” content="a survey designed to gather information about fans of RPGs">
   <link rel="stylesheet" href="styles.css">
   <title>RPG Survey</title>
@@ -10,20 +10,23 @@
 <body>
   <div class="container">
     <header>
-      <h1>RPG Survey</h1>
+      <h1 id="title">RPG Survey</h1>
     </header>
     <main>
-    <p class="subtitle">We want to know what you love about RPGs!</p>
+    <p id="description">We want to know what you love about RPGs!</p>
     <form method="post" id="survey-form">
-      <fieldset>
+      <section role="region" aria-labelledby="user-info">
+      <fieldset name="user-info">
         <legend class="subtitle">Your information</legend>
-        <label for="name" id="name-label">Your Name: <input id="name" type="text" required placeholder="Geralt of Rivia"></label>
-        <label for="email" id="email-label">Your email: <input id="email" type="email" required placeholder="commander-shepard@alliance.mil"></label>
+          <label for="name" id="name-label">Your Name: <input id="name" type="text" required placeholder="Geralt of Rivia" autocomplete="on"></label>
+          <label for="email" id="email-label">Your email: <input id="email" type="email" required placeholder="commander-shepard@alliance.mil" autocomplete="on"></label>
       </fieldset>
-      <fieldset>
+      </section>
+      <section role="region" aria-labelledby="experience-questions">
+      <fieldset name="experience-questions">
         <legend class="subtitle">Experience</legend>
         <label for="number-played" id="number-label">How many RPGs have you played? <input id="number" type="number" name="number-played" min="0" max="100" placeholder="0"></label>
-        <label for="best-genre">What is your favorite RPG genre? 
+        <label for="best-genre">What is your favorite RPG genre?  
           <select id="dropdown" name="best-genre">
             <option value=" ">(select one)</option>
             <option value="1">action RPGs</option>
@@ -34,28 +37,32 @@
           </select>
         </label>
         </fieldset>
-        <fieldset>
-          <legend for="characteristics" class="subtitle">  Preferences</legend>
-          <p>What do you love about RPGs? Check all that apply</p>
-          <div class="indent">
-          <label for="stories"><input id="stories" type="checkbox" name="characteristics" value="characteristics-1">highly developed stories</label>
-          <label for="world-building"><input id="world-building" type="checkbox" name="characteristics" value="characteristics-2">detailed world-building</label>
-          <label for="character-interactions"><input id="character-interactions" type="checkbox" name="characteristics" value="characteristics-3">complex and dynamic character interactions</label>
-          <label for="replay-value"><input id="replay-value" type="checkbox" name="characteristics" value="characteristics-4">replay value</label>
-          <label for="character-creation"><input id="character-creation" type="checkbox" name="characteristics" value="characteristics-5">character creation</label>
-          <label for="choices"><input id="choices" type="checkbox" name="characteristics" value="characteristics-6">choices and consequences</label>
-          <label for="exploration"><input id="exploration" type="checkbox" name="characteristics" value="characteristics-7">exploration and quests</label>
-          <label for="romance"><input id="romance" type="checkbox" name="characteristics" value="characteristics-8">romance</label>
+        </section>
+        <section role="region" aria-labelledby="preference-questions">
+        <fieldset name="preference-questions">
+          <legend class="subtitle">  Preferences</legend>
+          <h3>What do you love about RPGs? Check all that apply</h3>
+            <div class="indent">
+              <label for="stories"><input id="stories" type="checkbox" name="characteristics" value="characteristics-1">highly developed stories</label>
+              <label for="world-building"><input id="world-building" type="checkbox" name="characteristics" value="characteristics-2">detailed world-building</label>
+              <label for="character-interactions"><input id="character-interactions" type="checkbox" name="characteristics" value="characteristics-3">character interactions</label>
+              <label for="replay-value"><input id="replay-value" type="checkbox" name="characteristics" value="characteristics-4">replay value</label>
+              <label for="character-creation"><input id="character-creation" type="checkbox" name="characteristics" value="characteristics-5">character creation</label>
+              <label for="choices"><input id="choices" type="checkbox" name="characteristics" value="characteristics-6">choices</label>
+              <label for="exploration"><input id="exploration" type="checkbox" name="characteristics" value="characteristics-7">exploration and quests</label>
+              <label for="romance"><input id="romance" type="checkbox" name="characteristics" value="characteristics-8">romance</label>
+              </div>
+            <h3>What world concept do you prefer?</h3>
+            <div class="indent">
+            <label for="open-world"><input id="open-world" type="radio" name="concept" value="concept-1" checked>open world</label>
+            <label for="free-roam"><input id="free-roam" type="radio" name="concept" value="concept-2">free-roam</label>
+            <label for="sandbox"><input id="sandbox" type="radio" name="concept" value="concept-3">sandbox</label>
           </div>
-        <p>What world concept do you prefer?</p>
-        <div class="indent">
-        <label for="open-world"><input id="open-world" type="radio" name="concept" value="concept-1" checked>open world</label>
-        <label for="free-roam"><input id="free-roam" type="radio" name="concept" value="concept-2">free-roam</label>
-        <label for="sandbox"><input id="sandbox" type="radio" name="concept" value="concept-3">sandbox</label>
-      </div>
-      <label for="companion">Who is the best companion in all RPGs?
-        <textarea id="companion" name="companion" rows="3" cols="30" placeholder="HK-47"></textarea>
-        <input id="submit" type="submit" value="Submit">
+            <h3>Who is the best companion?</h3>
+            <label for="companion"><textarea id="companion" name="companion" rows="3" cols="20" placeholder="HK-47"></textarea></label>
+      </fieldset>
+      </section>
+      <input id="submit" type="submit" value="Submit">
     </form>
 </div>
 </main>

@@ -1,84 +1,78 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #ffc87a;
+}
+
 body {
-    background-image: url(vecteezy_fantasy-pink-planet-surface_19804657.svg);
-    background-size: cover;
-    color: #ffc87a;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
-header h1 {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 0;
-    margin: 0;
-}
-
-.subtitle {
-    text-align: left;
-    margin: 0;
-    padding: 1em 0;
-    font-size: 1.25rem;
+  background-image: url(vecteezy_fantasy-pink-planet-surface_19804657.svg);
+  background-size: cover;
 }
 
 .container {
-    background-color: #5b36d9de;
-    border: 2px solid #5b36d9de;
-    width: 30vw;
-    margin: 20px auto;
-    padding: 0 7px;
-    border-radius: 30px;
+  background-color: #5b36d9de;
+  border: 2px solid #5b36d9de;
+  padding: 3rem;
+  box-shadow: 0 0 1rem #000000;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 750px;
 }
 
-main {
-    margin: 0;
-    padding: 2em;
+h1 {
+  text-align: center;
+  margin: 1rem auto;
+  text-transform: uppercase;
 }
 
-label {
-    display: block;
-    margin: 0 auto;
-    padding: 0.5rem;
+#description {
+  text-align: center;
+  margin: 1rem;
+}
+
+h3 {
+  margin: .25rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+}
+
+@media (min-width: 320px) {
+  label {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 1rem;
+  }
 }
 
 fieldset {
-    border: none;
-    padding: 0.5rem 0;
-  }
+  border: 0.5rem outset #ffc87a;
+  margin: 1rem auto;
+}
 
-/* check heights and fixed v relative units */
-
-.indent {
-margin-left: 1em;
+input, select {
+  margin: .5rem;
 }
 
 input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 50px auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #d5d0f3;
-    border-color: #ffff;
-    min-width: 100px;
-    max-width: 100px;
+  font-size: 1.25rem;
+  display: block;
+  margin: 4rem auto;
+  font-size: 1.1rem;
+  background-color: #d5d0f3;
+  border-color: #ffff;
 }
 
-  /* check heights and fixed v relative units */
+footer {
+  padding: .25rem;
+}
 
-  footer,
-  footer a {
-    color: #000000;
-  }
-
-  footer a {
-    margin: 0;
-    padding: 0;
-  }
-
-  .credit {
-    margin: 0;
-    padding: 1em 1em;
-  }
+.credit, a {
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
