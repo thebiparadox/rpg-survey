@@ -2,6 +2,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #ffc87a;
+  box-sizing: border-box;
 }
 
 body {
@@ -72,7 +73,7 @@ footer {
 }
 
 .credit, a {
-  color: #000000;
+  color: #ffc87a;
   font-weight: 600;
   margin: 0;
 }
